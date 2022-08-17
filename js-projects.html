@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" ontouchmove >
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/js-projects.css">
+  <script src="https://kit.fontawesome.com/ea68d99c06.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <title>Leander Haesaert | Front-End Developer & UX/UI Designer</title>
+</head>
+<body tabIndex=0>
+  <!-- Header -->
+  <header id="header-home">
+      <div class="menu">
+      <ul class="menu-list">
+        <li class="menu-item">
+          <a href="index.html#container-about" class="menu-link">about</a>
+        </li>
+        <li class="menu-item">
+          <a href="projects.html" class="menu-link">Projects</a>
+          <li class="menu-sublink">
+            <a href="projects.html#project-1" >portfolio</a>
+            <a href="projects.html#project-2" >padelpancakes</a>
+            <a href="projects.html#project-3" >javascript</a>
+            <a href="projects.html#project-4" >maynooth</a>
+          </li>
+        </li>
+        <li class="menu-item">
+        <a href="contact.html" class="menu-link">Contact</a>
+        <ul class="social">
+            <li class="linkedin"><a href="https://www.linkedin.com/in/leander-haesaert-50614912b/"><i class="fab fa-linkedin fa-2x"></i></a>
+            </li>
+            <li class="contact"><a href="contact.html"><i class="far fa-envelope fa-2x"></i></a></li>
+          </ul>
+      </li>
+    </div>
+    <ul class="social-left">
+            <li class="linkedin"><a href="https://www.linkedin.com/in/leander-haesaert-50614912b/"><i class="fab fa-linkedin fa-2x"></i></a>
+            </li>
+            <li class="contact"><a href="contact.html"><i class="far fa-envelope fa-2x"></i></a></li>
+          </ul>
+      <nav id="main-nav">
+          <div class="nav-item">
+            <a href="" title="" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+            </a>
+          </div>
+          <div class="nav-item">
+            <div class="item-logo">
+            <a href="index.html">
+              <img src="./img/logo.png" alt="My Portfolio" class="logo"></a>
+            </div>
+          </div>
+      </nav>
+  </header>
+
+  <!-- Content -->
+  <div class="container" id="container-js">
+    <!-- Counter -->
+  <div>
+    <h2>counter</h2>
+    <div id="container-counter">
+      <h5 id="display-count">Count</h5>
+      <div id="buttons-counter">
+      <button id="counter" class="btn-dark">counter</button>
+      <button id="resetter" class="btn-dark">Reset</button></div></div>
+    </div>
+    <!-- Tasklist -->
+    <div>
+      <h2>Tasklist</h2>
+  <div id="container-tasklist">
+    <div class="input-container">
+      <h3>Input Task</h3>
+        <form id="input-form">
+          <input
+            class="input-field input-dark"
+            type="text"
+            placeholder="Insert New Task"
+            name="tasks"
+            id="task-input"
+          />
+          <input type="submit" value="Add Task" class="btn-dark" />
+        </form>
+      </div>
+      <div class="list-container">
+        <h3 id="list-title">tasks</h3>
+        <div id="filter-clear">
+          <div id="filter-flex">
+        <input
+          class="input-field input-dark"
+          type="text"
+          name="filter"
+          placeholder="Filter Tasks"
+          id="filter"
+        /> 
+        <button class="clear-tasks btn-dark">Clear Tasks</button></div>
+        <div id="task-list">
+          <ul class="task-items"></ul>
+          
+        </div></div>
+      </div>
+  </div></div>
+  <!-- Loan Calculator -->
+  <div id="last-project">
+          <h2 class="heading">Loan Calculator</h2>
+            <div id="container-calc">
+            
+            <form id="loan-form">
+              <h3>Input data</h3>
+              <div class="input-group">
+                  <span class="description-input">Amount(€)</span>
+                  <input class="input-dark"
+                    type="number"
+                    class="form-control"
+                    id="amount"
+                    placeholder="Loan Amount"
+                  /></div>
+              
+              <div class="input-group">
+                  <span class="description-input">Interest (%)</span>
+                  <input class="input-dark"
+                    type="number"
+                    class="form-control"
+                    id="interest"
+                    placeholder="Interest"
+                  />
+              </div>
+              <div class="input-group">
+                <span class="description-input">Period (yrs)</span>
+                <input class="input-dark"
+                  type="number"
+                  class="form-control"
+                  id="years"
+                  placeholder="Years To Repay"
+                /></div>
+                <div id="submit-container">
+                <input
+                  type="submit"
+                  value="Calculate"
+                  class="btn-dark"
+                  id="submit-calc"
+                /></div>
+
+            </form>
+            <!-- LOADER -->
+            <div id="loading">
+              <img src="./img/loading.gif" alt="" />
+            </div>
+            <!-- RESULTS -->
+            <div id="results" class="pt-4">
+              <h3>Results</h3>
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="description-input">Monthly Payment (€)</span>
+                  <input
+                    type="number"
+                    class="input-dark"
+                    id="monthly-payment"
+                    disabled
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="description-input">Total Payment (€)</span>
+                  <input
+                    type="number"
+                    class="input-dark"
+                    id="total-payment"
+                    disabled
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="description-input">Total Interest (%)</span>
+                  <input
+                    type="number"
+                    class="input-dark"
+                    id="total-interest"
+                    disabled
+                  />
+                </div>
+              </div>
+          </div></div></div>
+</div>
+<footer>
+  <div class="footer-middle">
+    <a href="contact.html" >LET'S CONNECT!</a>
+    </div>
+  <div class="footer-right">
+    © 2021 | Leander Haesaert</div>
+  </footer>
+<script src="js/hamburger.js"></script>
+<script src="js/counter.js"></script>
+<script src="js/tasklist.js"></script>
+<script src="js/loan.js"></script>
+
+</body>
+</html>
